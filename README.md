@@ -1,42 +1,51 @@
-# Contact Form - Hammad's Portfolio
+# 💼 Hammad's Portfolio Website
 
-This is a simple and responsive Contact Form page designed for Hammad's portfolio website. The page includes a clean contact form, navigation, and a responsive video section that adjusts well on different screen sizes, especially mobile devices.
+A personal portfolio website built using HTML and CSS, showcasing Hammad's work, projects, and a functional contact form. This site is designed to be **responsive**, **clean**, and easy to navigate across desktop and mobile devices.
 
-## Features
+---
 
-- Responsive contact form with fields for:
+## 📄 Pages Included
+
+### 1. `index.html` – **Home Page**
+- Welcoming landing section with a profile image
+- Navigation bar linking to other sections
+- Embedded **introductory video**
+- Responsive layout with animations for better UX
+
+### 2. `projects.html` – **Projects Page**
+- Displays featured projects with descriptions and links
+- Organized using clean card-style sections
+- Adaptable for mobile screens
+- Buttons and elements scale appropriately on different viewports
+- Table having details
+  
+### 3. `contact.html` – **Contact Me Page**
+- A **responsive contact form** with the following fields:
   - Full Name
   - Email Address
   - Subject
   - Message
-  - Optional file upload (supports PDF, DOC, DOCX, PNG, JPG, JPEG)
-- Stylish buttons and input fields with hover animations
-- Responsive navigation menu
-- Responsive video container that fits mobile screens perfectly
-- Simple and clean layout with box shadows and rounded corners
-- Mobile-first design using CSS media queries for smooth adaptability
+  - File Upload (optional: `.pdf`, `.docx`, `.png`, `.jpg`, etc.)
+- CSS animations on hover (e.g., zoom effects)
+- Styled `submit` button with hover transition
+- Responsive and optimized for small screen sizes
 
-## Technologies Used
+---
 
-- HTML5
-- CSS3 (including Flexbox and Media Queries)
+## 🎨 Technologies Used
 
-## How to Use
+- **HTML5** – Semantic markup
+- **CSS3** – Flexbox, media queries, animations
+- **Vanilla JavaScript (optional)** – for future interactions
+- **No frameworks** – Lightweight and beginner-friendly
 
-1. Clone or download this repository.
-2. Open the `contact.html` file in your preferred web browser.
-3. The contact form is ready to use and styled for both desktop and mobile views.
-4. Customize the form `action` attribute in the `<form>` tag to connect with your backend or form handler service.
+---
 
-## Responsive Video Styling
+## 📱 Responsive Design
 
-The video element inside the `.video` container is styled to be fully responsive on small screens (max-width 425px), ensuring it scales correctly without overflow:
-
-```css
-.video video,
-.video iframe {
-  width: 100%;
-  max-width: 425px;
-  height: auto;
-  border-radius: 10px;
-}
+- Media queries target devices with max-width `425px`
+- Adjusted layout for:
+  - Navigation
+  - Form elements
+  - Video sections
+  - Text and image sizing
