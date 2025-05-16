@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammad's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  @media screen and (min-width: 1024px) {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; 
+      gap: 30px; 
+    }
+    .img {   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #5c6bc0;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    video {
+    height: 290px;
+    width: 700px;
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+  }
+    /* Animations */
+    @keyframes zoom-in {
+      from { font-size: 16px; }
+      to { font-size: 22px; }
+    }
+    .navli:hover {
+      animation: zoom-in 0.7s forwards;
+    }
+    @keyframes zoom-picture {
+      from { width: 250px; height: 250px; }
+      to { width: 325px; height: 325px; }
+    }
+    .profile-img:hover {
+      animation: zoom-picture 0.7s forwards;
+    }
+    @keyframes zoom-about {
+      from { font-size: 24px; }
+      to { font-size: 28px; }
+    }
+    #about:hover, .about-head:hover {
+      animation: zoom-about 0.7s both;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; 
+      gap: 30px; 
+    }
+    .img {   
+      display: flex;
+      justify-content: center;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .video {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    }
+  }
+@media screen and (max-width: 425px) {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      
+    }
+    body {
+      font-size: 0.5rem; 
+    }
+    .img {   
+      display: flex;
+      justify-content: center;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    video{
+    width: 100%;
+    max-width: 425px; 
+    height: auto;
+    border-radius: 10px; 
+  }
+  }
+</style>
+
+
+ </style>
+</head>
+<body>
+    <header>
+        <h1 class="header">Welcome to My Personal Webpage</h1>
+    </header>    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="navli">Home</a></li>
+            <li><a href="projects.html" class="navli">Projects</a></li>
+            <li><a href="contact.html" class="navli">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="img" >
+            <img src="assets/myimg.jpg" alt="Hammad's Photo" class="profile-img">
+        </section>
+            
+        <section class="text">
+            <h2 id="about">About Me</h2>
+            <h3 class="about-head">Hi, I'm Hammad! Web Developer</h3>
+            <ul>
+                <li>I study at the University of Management and Technology, currently in my 6th semester.</li>
+                <li>I love building creative and functional websites and mobile apps.</li>
+                <li>I've learned Flutter for mobile development and React.js for frontend web development.</li>
+                <li>I enjoy playing cricket and exploring new tech in my free time.</li>
+                <li>My dream is to become a successful software engineer.</li>
+                <li>Hard work and consistency are the values I believe in most.</li>
+            </ul>
+        </section>
+    </main>
+        <section class="second-main">
+            <video src="assets/myvideo.mp4" controls autoplay controlsList="nodownload" muted></video>
+        </section>
+        <section class="p-s">
+             <ul class="programming-languages">
+                <h2>Programming Languages</h2>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>Dart</li>
+            </ul>
+            <ul class="skills">
+                <h2>Skills</h2>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Machine Learning</li>
+                <li>UI Developer</li>
+            </ul>
+        </section>
+  
+
+    <footer>
+        <p>Made by Hammad with &hearts;</p>
+    </footer>
+
+</body>
+</html>

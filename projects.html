@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects - Hammad's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .alt-row {
+    background-color: #f9f9f9;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  thead {
+    background-color: #007BFF;
+    color: white;
+  }
+  tfoot {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  .github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .github-link img {
+    width: 24px;
+    height: 24px;
+  }
+
+  @keyframes zoom-in {
+    from { font-size: 16px; }
+    to { font-size: 22px; }
+  }
+  .navli:hover {
+    animation: zoom-in 0.7s forwards;
+  }
+
+  @keyframes zoom-project {
+    from {
+      height: 102px;
+      padding: 10px;
+      border: 1px solid lightgrey;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    to {
+      height: 120px;
+      padding: 30px;
+      border: 2px solid grey;
+      border-radius: 20px;
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+  #project-section:hover {
+    animation: zoom-project 0.7s both;
+  }
+  @keyframes table-zoom {
+    from {
+      height: 312px;
+      width: 800px;
+    }
+    to {
+      height: 400px;
+      width: 850px;
+      margin-top: 30px;
+      padding: 7px;
+      border: 2px solid grey;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px grey;
+    }
+  }
+  .table-section:hover {
+    animation: table-zoom 0.7s both;
+  }
+
+  @media screen and (min-width: 1024px) {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    main {
+      width: 80%;
+      margin: 0 auto;
+    }
+    #project-section {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .table-section {
+      width: 850px;
+      margin: 40px auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    main {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #project-section {
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+    .table-section {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    table {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    nav ul {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+     body {
+      font-size: 0.5rem; 
+    }
+    #project-section {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .github-link {
+
+      font-size: 0.5rem;
+      padding-top: 10px;
+    }
+    .table-section {
+      margin: 15px 0;
+    }
+    table {
+      font-size: 0.5rem;
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 6px;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li class="navli"><a href="index.html">Home</a></li>
+      <li class="navli"><a href="projects.html">Projects</a></li>
+      <li class="navli"><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="project-section">
+      <h2 >1. Quizzy App</h2>
+      <p>This is a smart quiz app built using <strong>Flutter</strong> and powered by <strong>OpenAI API</strong>.</p>
+      <div class="github-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+        <a href="https://github.com/hammad-umt/QuizzyApp" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+    <section id="project-section">
+      <h2 >2. Social Media Links</h2>
+      <p>Front-end only project using <strong>HTML</strong> and <strong>CSS</strong>.</p>
+      <div class="github-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+        <a href="https://github.com/hammad-umt/Social-Links-Profile" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="project-section">
+      <h2 >3. Weather App</h2>
+      <p>Flutter app using real-time <strong>Weather API</strong>.</p>
+      <div class="github-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+        <a href="https://github.com/hammad-umt/Weather_App" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="project-section">
+      <h2 >4. Amazon Clone</h2>
+      <p>Basic clone using <strong>HTML</strong> and <strong>CSS</strong>.</p>
+      <div class="github-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+        <a href="https://github.com/hammad-umt/Amazon-Clone-Project-Using-HTML-CSS" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+    <section class="table-section">
+      <table>
+        <caption>Project Portfolio Overview</caption>
+        <thead>
+          <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Client</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Quizzy App</th>
+            <td>Flutter,Firebase,OpenAPI</td>
+            <td>Self</td>
+            <td>1 Month</td>
+            <td>Mobile App Dev</td>
+          </tr>
+          <tr class="alt-row">
+            <th scope="row">Social Media Links</th>
+            <td>HTML, CSS</td>
+            <td>Self</td>
+            <td>2 Days</td>
+            <td>Frontend Dev</td>
+          </tr>
+          <tr>
+            <th scope="row">Weather App</th>
+            <td>Flutter,API</td>
+            <td>Self</td>
+            <td>1 Week</td>
+            <td>Mobile App Dev</td>
+          </tr>
+          <tr class="alt-row">
+            <th scope="row" rowspan="2">Ecommerce Website</th>
+            <td>HTML, CSS, JS</td>
+            <td rowspan="2">In-house</td>
+            <td rowspan="2">3 Weeks</td>
+            <td rowspan="2">Frontend Dev</td>
+          </tr>
+          <tr class="alt-row">
+            <td>Firebase, Bootstrap</td>
+          </tr>
+          <tr>
+            <th scope="row">Amazon Clone</th>
+            <td>HTML, CSS</td>
+            <td>Self</td>
+            <td>3 Days</td>
+            <td>Developer</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Total Projects: 5 | In-house: 1 | Personal: 4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Hammad with ♥</p>
+  </footer>
+</body>
+</html>
